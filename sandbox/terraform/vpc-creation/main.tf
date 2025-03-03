@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "/modules/vpc_creation"
+  source = "../../modules/vpc_creation"
 
   environment              = var.environment
   vpc_cidr                 = var.vpc_cidr
@@ -9,7 +9,7 @@ module "vpc" {
   subnets                  = var.subnets
   region                   = var.region
   vpc_name                 = var.vpc_name
-  resolver_rule_ids        = var.resolver_rule_ids
-  dhcp_domain_name         = var.dhcp_domain_name
-  dhcp_domain_name_servers = var.dhcp_domain_name_servers   
+  #resolver_rule_ids        = var.resolver_rule_ids
+  #dhcp_domain_name         = var.dhcp_domain_name
+  #dhcp_domain_name_servers = var.dhcp_domain_name_servers   
 }
